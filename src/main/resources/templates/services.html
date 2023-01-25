@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>Mi Telcel | Servicios</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+
+      <!-- Header -->
+      <header id="header">
+        <a href="/" class="logo"><strong>Inicio</strong></a>
+      </header>
+
+      <!-- Content -->
+      <section>
+        <header class="main">
+          <h1>Servicios</h1>
+        </header>
+
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th scope="col">Nombre Servicio</th>
+            <th scope="col">Endpoint</th>
+            <th scope="col">Protocolo</th>
+            <th scope="col">Metodo</th>
+            <th scope="col">Dueño del servicio</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr th:if="${servicios.empty}">
+            <td colspan="2"> No service Available </td>
+          </tr>
+          <tr th:each="servicio : ${servicios}">
+            <td><span th:text="${servicio.name}"> Nombre Servicio </span></td>
+            <td><span th:text="${servicio.endpoint}"> Endpoint </span></td>
+            <td><span th:text="${servicio.protocol}"> Protocolo </span></td>
+            <td><span th:text="${servicio.method}"> Metodo </span></td>
+            <td><span th:text="${servicio.owner}"> Dueño del servicio </span></td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <div class="inner">
+
+
+
+      <!-- Menu -->
+      <nav id="menu">
+        <header class="major">
+          <h2>Menu</h2>
+        </header>
+        <ul>
+          <!-- <li><a href="index.html">Inicio</a></li> -->
+          <li>
+            <span class="opener">Mi Telcel</span>
+            <ul>
+              <li><a href="#">Funcionalidades</a></li>
+              <li><a href="#">Categorias SD / TT</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="opener">Gestor de pagos</span>
+            <ul>
+              <li><a href="#">Motores</a></li>
+              <li><a href="#">Frames</a></li>
+              <li><a href="#">Relacion Canal/Frame</a></li>
+              <li><a href="#">Categorias SD / TT</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Section -->
+
+      <!-- Section -->
+
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/browser.min.js"></script>
+<script src="/js/breakpoints.min.js"></script>
+<script src="/js/util.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>

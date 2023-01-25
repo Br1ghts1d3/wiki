@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<html lang="">
+<head>
+    <title>Ing Web Wiki</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="/" class="logo"><strong>Mi Telcel / Gestor</strong> WIKI</a>
+                <ul class="icons">
+                    <li>
+                        <a th:href="@{/logout}">Logout</a>
+                    </li>
+                </ul>
+            </header>
+
+
+            <!-- Section -->
+            <section>
+                <header class="major">
+                    <h2>Mi Telcel</h2>
+                </header>
+                <div class="features">
+                    <article>
+                        <span class="icon fa-gem"></span>
+                        <div class="content">
+                            <h3>Perfiles</h3>
+                            <p>
+                                Perfiles que actualmente tiene mi Telcel y/o el gestor de pagos son: <strong><span th:text="${perfiles}"></span></strong>
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="icon solid fa-paper-plane"></span>
+                        <div class="content">
+                            <a href="/services/mitelcel"><h3>Servicios</h3></a>
+                            <p>
+                                Servicios que actualmente usa Mi Telcel y/o el gestor de pagos para poder llevar a cabo las funcionalidades/reglas de negocio establecidos
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="icon solid fa-rocket"></span>
+                        <div class="content">
+                            <h3>Atencion a clientes</h3>
+                            <p>
+                                Categorias de Trouble Ticket y/o Service Desk para la atencion de fallas
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="icon solid fa-signal"></span>
+                        <div class="content">
+                            <h3>Funcionalidades</h3>
+                            <p>
+                                Funcionalidades y servicios que se usan de acuerdo al perfil de la linea
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Section -->
+
+
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
+
+
+
+            <!-- Menu -->
+            <nav id="menu">
+                <header class="major">
+                    <h2>Menu</h2>
+                </header>
+                <ul>
+                    <!-- <li><a href="index.html">Inicio</a></li> -->
+                    <li>
+                        <span class="opener">Mi Telcel</span>
+                        <ul>
+                            <li><a href="/services/mitelcel">Servicios</a></li>
+                            <!-- <li><a href="/profiles/mitelcel">Perfiles</a></li> -->
+                            <li><a href="#">Funcionalidades</a></li>
+                            <li><a href="#">Categorias SD / TT</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="opener">Gestor de pagos</span>
+                        <ul>
+                            <li><a href="#">Motores</a></li>
+                            <li><a href="#">Frames</a></li>
+                            <li><a href="#">Relacion Canal/Frame</a></li>
+                            <li><a href="#">Categorias SD / TT</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Section -->
+
+            <!-- Section -->
+
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/browser.min.js"></script>
+<script src="/js/breakpoints.min.js"></script>
+<script src="/js/util.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>
